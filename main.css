@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    padding: 0.5em;
+}
+
+section {
+    height: 100vh;
+    text-align: center;
+    margin: 1.5em;
+    padding: 1em;
+}
+
+button {
+    margin: 1.5em;
+    padding: 1em;
+    cursor: pointer;
+}
+
+
+/*configuracion del btn menu hamburger*/
+.menu {    /*configuracion del div q contiene la img*/
+    top: 0.5em;
+    right: 2em;
+    position: fixed;
+    height: 30px;
+    width: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 1em;
+    cursor: pointer;
+    /*centrar imagen por si acaso*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(000, 000, 000, 0.5);
+    
+    
+}
+
+.menu:hover {
+    background-color: #fcdc00; 
+    border: 1px dashed black;  
+}
+
+.menu img {
+    height: 30px;
+    margin: auto;
+}
+/*fin btn menu hamburger*/
+
+/*btn cerrar*/
+.menu-ver .close {
+    position: absolute;
+    top: 4em;
+    right: 4em;
+}
+
+.close img {
+    height: 45px;
+}
+/*fin btn cerrar*/
+
+/*menu*/
+.menu-ver {
+    background-color: rgba(000, 000, 000, 0.5);    
+    height: 100vh;
+    width: 100vw;
+    top: -101vh;  /*esto hace ocultar el menu*/
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.menu-ver nav a {
+    display: block;
+    margin: 1em;
+    padding: 1em;
+    text-decoration: none;
+    color: #fcdc00;
+    font-size: 1.2em;
+}
+
+.menu-ver nav a:hover {
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+/*esta clase va a mostrar el menu*/
+.active {
+    top: 0;
+}
+
+/*TITULO*/
+.titulo {
+    background-color: #fcdc00;
+    color: black;
+    font-size: 1.6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.remover {
+    transform: translate(-100%);
+}
+
+#reloj {
+    color: red;
+}
+
+
