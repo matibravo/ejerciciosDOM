@@ -19,7 +19,8 @@ export default function relojDigital(btnIniciarReloj, btnDetenerReloj, btnAlarma
 
             clearInterval(tiempo);               //funcion limpiar tiempo
 
-            document.getElementById("reloj").classList.add("remover"); // agrego clase remover para quitar reloj de visualización
+            document.getElementById("reloj").innerHTML = null;  //eliminar el elemento reloj
+
             document.getElementById("btnIniciarReloj").disabled = false;              
         }
 
